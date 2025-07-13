@@ -5,7 +5,7 @@ import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 const projectData = [
   {
     title: "Controle Financeiro",
-    imageUrl: "/dashboard.jpg",
+    imageUrl: `${process.env.PUBLIC_URL}/dashboard.jpg`,
     description: "Um sistema web para gerenciamento financeiro pessoal, com cadastro de transações, resumo mensal, filtros por período e gráficos de entradas e saídas. Desenvolvido com Node.js, React, PostgreSQL e autenticação JWT.",
     githubUrl: "https://github.com/Sluiz-13/controle-financeiro",
     liveUrl: "https://controlefinanceiroweb.netlify.app/",
@@ -21,7 +21,7 @@ const projectData = [
   },
   {
     title: "Patrimônio de TI",
-    imageUrl: "/patrimonioTi.png",
+    imageUrl: `${process.env.PUBLIC_URL}/patrimonioTi.png`,
     description: "Sistema para controle de máquinas, monitores e mesas por setor, com registro de patrimônio e movimentações. Desenvolvido com foco em organização da infraestrutura de TI e exportação de dados para Excel.",
     githubUrl: "https://github.com/Sluiz-13",
     liveUrl: null, // Substitua pelo link da aplicação online
