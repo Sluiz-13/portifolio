@@ -8,11 +8,32 @@ body {
 }
 
 .hero {
+  position: relative; /* Necessário para o overlay */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Efeito parallax */
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Overlay escuro */
+  z-index: 1;
+}
+
+/* Garante que o conteúdo do hero fique na frente do overlay */
+.hero > .container {
+  position: relative;
+  z-index: 2;
 }
 
 .hero h1 {
