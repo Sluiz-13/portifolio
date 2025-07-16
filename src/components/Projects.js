@@ -13,7 +13,7 @@ const projectData = [
   },
   {
     title: "Buscador de Protocolos",
-    imageUrl: null, // Adicionar uma imagem ou placeholder
+    imageUrl: `${process.env.PUBLIC_URL}/buscador_de_protocolo.jpg`,
     description: "Ferramenta de consulta de protocolos internos de ligação, permitindo busca rápida por numeros de protocolos com ano, mes e dia. Interface simples e eficiente, ideal para uso em empresas com fluxo interno de documentos.",
     githubUrl: "https://github.com/Sluiz-13",
     liveUrl: null, // Substitua pelo link da aplicação online
